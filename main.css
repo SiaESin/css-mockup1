@@ -1,21 +1,16 @@
 body {
     background-color: rgb(35, 43, 43);
 }
-* {
-    /* border: 1px solid deeppink;*/
-} 
+/* * {
+    border: 1px solid deeppink;
+}  */
 .container {
-    /* display: flex;
-    flex-direction: column; 
-    margin: auto; */
-    /* padding: 1rem; */
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     min-height: 50vh;
     margin-left: 200px;
     margin-right: 200px;
-    justify-content: center; 
+    /* justify-content: center;  */
     align-items: center;
 }
 li, nav {
@@ -25,7 +20,7 @@ li, nav {
 .princess {
     background-color: rgb(7, 7, 150);
     color: white;
-    width: 70%;
+    width: 100%;
     display: flex;
     /* justify-content: space-between; */
     }
@@ -37,8 +32,7 @@ nav {
     background-color: white;
     color: darkblue;
     text-align: center;
-    min-width: 70%;
-    
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -48,62 +42,58 @@ nav li {
 .banner {
     /* flex-basis: 2; */
     position: relative;
+    width: 100%;
 }
 .ship {
-    /* flex-grow: 1; */
+    flex: 1;
     position: relative;
-    flex-basis: 2;
+    width: 100%;
+    height: auto;
 }
-.ship-text {
-    position: absolute;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5em;
-    color: darkblue;
-    background: ghostwhite;
-    opacity: .75;
-    height: 680px;  
-    width: 40%;
-    left: 0px;
-    top: 0px;
-}
-.ship-text button {
-    position: absolute;
-    background-color: darkblue;
-    color: white;
-    left: 200px;
-    top: 400px;
-}
+
 .view-cruises {
     background-color: rgb(34, 34, 65);
     color: white;
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
     max-height: 100px;
-    width: 70%;
+    width: 100%;
 }
 .destination, .month, .wherefrom, .length {
     display: inline;
+    justify-content: space-evenly;
 }
 .viewed {
     background-color: rgb(20, 103, 114);
+    height: 1em;
 }
 a {
     text-decoration: none;
     color: white;
 }
 
+.selectors {
+    display: flex;
+    justify-content: space-around;
+}
 .selectors button {
     background-color: rgb(33, 168, 44);
     color: white;
 }
-/* .options {
-    background-color: rgb(25, 25, 114);
-    min-height: 50vh;
-} */
-/* .package, .deals, .new, .hawaii {
-    min-height: 100vh;
-    display: inline;
-    border: 1px solid ghostwhite;
+.options {
+    display: flex;
+    width: 100%;
     flex-basis: 1;
-
-} */
+}
+.package, .deals, .new, .hawaii {
+    display: flex;
+    align-items: center;
+    align-items: space-evenly;
+    margin: 1em;
+  }
+.option img {
+    max-width: 25%;
+    
+}    
